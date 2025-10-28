@@ -1,0 +1,14 @@
+apiVersion: automation.cloudbees.io/v1alpha1
+kind: workflow
+name: prod
+on:
+  workflow_dispatch:
+
+jobs:
+  deploy:
+    steps:
+      - uses: cloudbees-io/register-deployed-artifact@v2
+        with:
+          labels: SVMultiLangRepo
+          artifact-id: dec01d23-c608-4240-b77f-26a3517570b9
+          target-environment: QA
