@@ -10,5 +10,5 @@ jobs:
       - uses: cloudbees-io/register-deployed-artifact@v2
         with:
           labels: SVMultiLangRepo
-          artifact-id: dec01d23-c608-4240-b77f-26a3517570b9
-          target-environment: QA
+          artifact-id: bc67851f-5a80-4cdb-ba86-048939e79071
+          target-environment: ASPM_QA_ENV
